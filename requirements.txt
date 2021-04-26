@@ -1,0 +1,9 @@
+sqlalchemy
+sqlalchemy_serializer
+flask
+flask_restful
+flask_login
+werkzeug
+flask_wtf
+wtforms
+requests

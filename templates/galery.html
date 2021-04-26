@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block style %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/jquery.fancybox.min.css" rel="stylesheet">
+    <style>
+        .thumb img {
+            -webkit-filter: grayscale(0);
+            filter: none;
+            border-radius: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
+        .thumb img:hover {
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+        }
+        .thumb {
+            padding: 5px;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+<div class="container">
+    <h1 class="h3 text-center my-4">Фотогалерея</h1>
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="static/img/main_page1.jpg">
+                <img class="img-fluid" src="static/img/main_page1.1.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="static/img/main_page2.jpg">
+                <img class="img-fluid" src="static/img/main_page2.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="static/img/main_page3.jpg">
+                <img class="img-fluid" src="static/img/main_page3.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="static/img/main_page4.jpg">
+                <img class="img-fluid" src="static/img/main_page4.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="static/img/main_page5.jpg">
+                <img class="img-fluid" src="static/img/main_page5.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="static/img/main_page6.jpg">
+                <img class="img-fluid" src="static/img/main_page6.1.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="static/img/main_page7.jpg">
+                <img class="img-fluid" src="static/img/main_page7.jpg" alt="...">
+            </a>
+        </div><div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="static/img/main_page8.jpg">
+                <img class="img-fluid" src="static/img/main_page8.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="static/img/main_page9.jpg">
+                <img class="img-fluid" src="static/img/main_page9.1.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="static/img/main_page10.jpg">
+                <img class="img-fluid" src="static/img/main_page10.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="static/img/main_page11.jpg">
+                <img class="img-fluid" src="static/img/main_page11.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="static/img/main_page12.jpg">
+                <img class="img-fluid" src="static/img/main_page12.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="static/img/main_page13.jpg">
+                <img class="img-fluid" src="static/img/main_page13.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 thumb">
+            <a data-fancybox="gallery" href="static/img/main_page14.jpg">
+                <img class="img-fluid" src="static/img/main_page14.jpg" alt="...">
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

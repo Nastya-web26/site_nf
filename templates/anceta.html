@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h2>Заполните анкету, и мы перезвоним вам, чтобы уточнить заказ</h2>
+<form action="" method="post">
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.email.label }}<br>
+        {{ form.email(class="form-control", type="email") }}<br>
+        {% for error in form.email.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.name_ful.label }}<br>
+        {{ form.name_ful(class="form-control") }}<br>
+        {% for error in form.name_ful.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.place.label }}<br>
+        {{ form.place(class="form-control") }}<br>
+        {% for error in form.place.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.data_holiday.label }}<br>
+        {{ form.data_holiday(class="form-control", type="datetime") }}<br>
+        {% for error in form.data_holiday.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.mobile_phone.label }}<br>
+        {{ form.mobile_phone(class="form-control")}}<br>
+        {% for error in form.mobile_phone.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.holiday.label }}<br>
+        {{ form.holiday(class="form-control") }}<br>
+        {% for error in form.holiday.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.number_of_guests.label }}<br>
+        {{ form.number_of_guests(class="form-control") }}<br>
+        {% for error in form.number_of_guests.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+    {{message}}
+</form>
+{% endblock %}
