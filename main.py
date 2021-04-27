@@ -1,5 +1,6 @@
 import csv
 import datetime
+import os
 
 from flask import Flask, render_template, request, make_response, jsonify
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
@@ -220,7 +221,8 @@ def main():  # вызывается при запуске программы
     api.add_resource(news_resources.NewsListResource, '/api/v2/news')
     # для одного объекта
     api.add_resource(news_resources.NewsResource, '/api/v2/news/<int:news_id>')
-    app.run()
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
 
 
 if __name__ == '__main__':
