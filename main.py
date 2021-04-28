@@ -69,7 +69,7 @@ def anceta():
         db_sess.add(order)
         db_sess.commit()
         orders = db_sess.query(Order).all()
-        with open('static/orders.csv', 'w') as csvfile:
+        with open('static/orders.csv', 'w', encoding='utf-8') as csvfile:
             writer = csv.writer(csvfile, delimiter=';', quotechar='"')
             for order in orders:
                 print(order)
